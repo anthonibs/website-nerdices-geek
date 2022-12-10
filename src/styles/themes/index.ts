@@ -12,13 +12,13 @@ export const dark = {
       third: "#C4C4C4",
       default: "#F2F2F2",
     },
-    isHover: "#ED280C",
+    isHover: "#f75d24",
     isActive: "#F74C0C",
   }
-}
+};
 
 export const light = {
-  title: "ligth",
+  title: "light",
 
   colors: {
     backgroundBody: "#FCFCFC",
@@ -29,7 +29,7 @@ export const light = {
       third: "#4C4C4C",
       default: "#4C4C4C",
     },
-    isHover: "#ED280C",
+    isHover: "#f75d24",
     isActive: "#F74C0C",
   }
-}
+};

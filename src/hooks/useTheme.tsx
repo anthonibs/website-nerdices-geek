@@ -1,37 +1,36 @@
 import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useState } from "react";
 import { DefaultTheme } from "styled-components";
 
-import { dark, light } from "../styles/themes";
+import { dark } from "../styles/themes";
 
 
 interface IThemeContext {
-	theme: DefaultTheme;
-	setTheme: Dispatch<SetStateAction<DefaultTheme>>;
+  theme: DefaultTheme;
+  setTheme: Dispatch<SetStateAction<DefaultTheme>>;
 }
 
 const ThemeContext = createContext<IThemeContext>({} as IThemeContext);
 
 
 interface IThemeProviderProps {
-	children: ReactNode;
+  children: ReactNode;
 }
 
 const ThemeProvider = ({ children }: IThemeProviderProps) => {
-	const [theme, setTheme] = useState<DefaultTheme>(dark);
+  const [theme, setTheme] = useState<DefaultTheme>(dark);
 
-	return (
-		<ThemeContext.Provider value={{ theme, setTheme }}>
-			{children}
-		</ThemeContext.Provider>
-	);
+  return (
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
 };
 
 
 function useTheme(): IThemeContext {
-	const context = useContext(ThemeContext);
+  const context = useContext(ThemeContext);
 
-	return context;
+  return context;
 }
-
 
 export { ThemeProvider, useTheme };
