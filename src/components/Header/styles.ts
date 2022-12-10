@@ -7,9 +7,11 @@ export const HeaderMain = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 10%;
   font-family: 'Inter', sans-serif;
+  position: fixed;
+  z-index: 1000;
 
   img {
     display: block;

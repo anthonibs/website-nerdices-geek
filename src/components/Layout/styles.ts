@@ -12,4 +12,5 @@ export const ContainerGrid = styled.div`
     "HEADER"
     "CONTENT"
     "FOOTER";
+  position: relative;
 `;
