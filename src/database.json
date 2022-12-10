@@ -1,111 +1,117 @@
-// Simulando uma requisição em um bando de dados;
 {
-  "banner-main": {
+  "bannerMain": {
     "title": "Guardiões da Galáxia Vol 3: qual herói vai morrer no filme?",
     "description": "Em Guardiões da Galáxia Vol. 3 da Marvel Studios, nosso amado grupo de desajustados está parecendo um pouco diferente nos dias de hoje. Peter Quill, ainda se recuperando da perda de Gamora, deve reunir sua equipe ao seu redor para defender o universo, juntamente com a proteção de um dos seus.",
-    "image": "./assets/images/Guardians-of-the-Galaxy-Vol.-3.jpg"
+    "image": "https://oimparcial.com.br/app/uploads/2022/12/Guardians-of-the-Galaxy-Vol.-3-min-1.jpg"
   },
-  "banner-aside": [
+  "bannerAside": [
     {
       "title": "Dr. Stone revela previsão de estreia da 3ª temporada",
       "description": "Diretamente da TOHO animation 10th Anniversary Stage Event, tivemos a confirmação que a previsão de estreia da terceira temporada de Dr. Stone está marcada para a primavera norte-americana do próximo ano.",
-      "image": "./assets/images/dr-stone.jpeg"
+      "image": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/45cd3de6acf23f58481db5e2ec2269be.jpeg"
     },
     {
       "title": "Blue Beetle",
       "description": "O adolescente Jaime Reyes ganha superpoderes quando um misterioso escaravelho se prende à sua coluna e lhe fornece uma poderosa armadura alienígena azul.",
-      "image": "./assets/images/blue-beetle.webp"
+      "image": "https://tm.ibxk.com.br/ms/images/highlights/000/047/448/44799.jpg?ims=1200x675"
     }
   ],
   "notice": [
     {
       "title": "Pânico 6 Vem Mais Sangrento e Mais Violento, De Acordo com Melissa Barrera",
       "description": "Sexto filme da franquia com estreia marcada para março de 2023, será o primeiro sem a atriz Neve Campbell. Referências a sua personagem, Sidney Prescott, estarão presentes no longa mesmo após a atriz deixar o projeto.",
-      "image": "./assets/images/scream-6.jpg"
+      "image": "https://pipocasclub.com.br/wp-content/uploads/2022/01/panicopipocas-1-e1641903874565.jpeg",
+      "data": "12/11/2022"
     },
     {
       "title": "Nimona | Netflix “resgata” animação baseada em HQ de ND Stevenson",
       "description": "Cancelada pela Disney após o fechamento do Blue Sky, estúdio de animação da antiga Fox, Nimona, animação baseada na HQ de ND Stevenson (Lumberjanes, She-Ra e as Princesas do Poder).",
-      "image": "./assets/images/nimona-filme.jpg"
+      "image": "https://cdn.ome.lt/0F6hi0TtU6W1vUNXpZR6AtFA23o=/1200x630/smart/extras/conteudos/nimona-filme-netflix.jpg",
+      "data": "24/09/2022"
     },
     {
       "title": "A Freira 2 ganha as primeiras personagens",
       "description": "O segundo filme sobre a assustadora freira de Hollywood já começou a dar grandes passos na sua produção e agora já conta com confirmações no elenco.",
-      "image": "./assets/images/a-freira-2.jpeg"
+      "image": "https://seriesnews.com.br/wp-content/uploads/2022/10/A-Freira-2-filme.jpg",
+      "data": "10/12/2022"
     },
     {
       "title": "'John Wick 4 é o filme mais dificil que fiz', diz Keanu Reeves",
       "description": "Na CCXP, Keanu Reeves ainda revelou que John Wick 4 terá cena de ação no Arco do Triunfo de Paris",
-      "image": "./assets/images/john-wick-4.png"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNNTs7anCumAErUm6tyHH9KiOgP456DD7WsrwdZewu6-h-2YS_m0YO66MX_TBJTse_Bu4&usqp=CAU",
+      "data": "11/11/2022"
     },
     {
       "title": "Chris Hemsworth revela cena insana de Resgate 2 na Netflix: “Outro nível”",
       "description": "Chris Hemsworth, conhecido por ser o Thor da Marvel, estrela Resgate e sua continuação na Netflix. Agora, ele falou sobre uma insana cena da sequência.",
-      "image": "./assets/images/o-resgate-2.jpg"
+      "image": "https://conteudo.imguol.com.br/c/parceiros/fb/2020/04/27/resgate-2-pode-reunir-chris-hemsworth-com-outro-astro-da-marvel-1588003873606_v2_450x253.jpg",
+      "data": "01/12/2022"
     },
     {
       "title": "Naruto Shippuden",
       "description": "Naruto Shippuden é a continuação da primeira parte do mangá Naruto, e continua a mesma linha da história após a passagem de dois anos e meio no universo Naruto.",
-      "image": "./assets/images/naruto-shippuden.jpg"
+      "image": "https://coolthemestores.com/wp-content/uploads/2021/05/naruto-shippuden-wallpaper-background.jpg",
+      "data": "05/05/2022"
     },
     {
       "title": "Duna 2: Timothée Chalamet compartilha imagem em set de filmagem",
       "description": "Na imagem, Chalamet é visto nas dunas de Arrakis, conhecido como Duna pelos habitantes do planeta desértico – os fremen. O traje do ator chamou a atenção por ser escuro e exibir uma espécie de um raio-x de um esqueleto, junto de um capuz.",
-      "image": "./assets/images/duna-2.jpeg"
+      "image": "https://observatoriodocinema.uol.com.br/wp-content/uploads/2021/10/duna-1200x900-1.jpg",
+      "data": "17/06/2022"
     }
   ],
-  "latest-news": [
+  "latestNews": [
     {
       "title": "Jujutsu Kaisen",
       "description": "Yuji é um gênio do atletismo, mas não tem interesse algum em ficar correndo em círculos. Ele é feliz como membro no Clube de Estudo de Fenômenos Psíquicos. Apesar de estar no clube apenas por diversão, tudo fica sério quando um espírito de verdade aparece na escola! A vida está prestes a se tornar muito interessante na Escola Sugisawa…",
-      "image": "./assets/images/jujutsu-kaisen.jpeg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLtIPbx0gx4kAyLSrIKRV2ZVRoIAS2iRk1IA&usqp=CAU"
     },
     {
       "title": "Boruto: Naruto Next Generations",
       "description": "Mais de 12 anos após a Quarta Grande Guerra Ninja, o mundo finalmente se encontra em paz, Naruto Uzumaki realizou seu sonho de se tornar Hokage, alguns anos após seu casamento com Hinata Hyuga, com quem teve dois filhosː Boruto e Himawari.",
-      "image": "./assets/images/boruto.jpeg"
+      "image": "https://images.alphacoders.com/821/821092.png"
     },
     {
       "title": "Os Mercenários 4: Título oficial e elenco são revelados",
       "description": "O título foi revelado durante a CinemaCon 2022 juntamente com um novo trailer e uma lista de elenco que inclui Jason Statham, Curtis '50 Cent' Jackson, Megan Fox, Dolph Lundgren, Tony Jaa, Iko Uwais, Randy Couture, Jacob Scipio, Levy Tan, Andy Garcia e Sylvester Stallone.",
-      "image": "./assets/images/mercenarios-4.jpeg"
+      "image": "https://cloud.estacaonerd.com/wp-content/uploads/2019/07/05164534/os-mercenarios-3-0.jpg"
     },
     {
       "title": "Encontro de princesas: Kate Middleton conversa com Halle Bailey durante visita aos EUA",
       "description": "A Princesa de Gales posou ao lado da atriz que interpreta A Pequena Sereia em próximo live-action da Disney",
-      "image": "./assets/images/pequena-sereia.jpeg"
+      "image": "https://epipoca.com.br/wp-content/uploads/2021/06/pequena-sereia-1-1200x900.jpg"
     },
     {
       "title": "Novo mangá do criador de Goblin Slayer é revelado",
       "description": "O novo mangá do criador de Goblin Slayer, Kumo Kagyu, foi revelado oficialmente. De acordo com comunicado de Big Gangan e Square Enix, seu título oficial será Moscow 2160.",
-      "image": "./assets/images/goblin-slayer-banner.jpg"
+      "image": "https://i.pinimg.com/originals/f0/19/bd/f019bda13e9bf3d723e632df1d5c7892.jpg"
     },
     {
       "title": "Vikings: Por Que Ragnar É Tão Importante Para Valhalla",
       "description": "Vikings: Valhalla é derivada de uma série da History Channel, e mesmo que Ragnar Lothbrok tenha sido morto na série principal, ele não deixou de ser importante para Valhalla.",
-      "image": "./assets/images/vikings.jpg"
+      "image": "https://mixdeseries.com.br/wp-content/uploads/2022/03/Vikings-Ragnar-Valhalla-1024x580.jpg"
     }
   ],
   "games": [
     {
       "title": "Street Fighter 6: data de lançamento do jogo é vazada",
       "description": "Loja online do PlayStation 4 vaza data; jogo chega em junho de 2023.",
-      "image": "./assets/images/sns_6.jpg"
+      "image": "https://www.comboinfinito.com.br/principal/wp-content/uploads/2022/11/Street-Fighter-6.jpg"
     },
     {
       "title": "A Capcom realmente quer que você assista o The Game Awards 2022",
       "description": "A empresa deu a entender no Twitter que prepara grandes novidades para o evento.",
-      "image": "./assets/images/progmata.jpeg"
+      "image": "https://files.tecnoblog.net/wp-content/uploads/2021/11/the-game-awards.jpg"
     },
     {
       "title": "God of War: Ragnarök finalmente ganha Modo Foto",
       "description": "A ferramenta permite que os jogadores produzam o clique perfeito com comandos simples, como definir a expressão de personagens, até questões mais detalhadas como configuração de brilho e obturador.",
-      "image": "./assets/images/god-of-war-ragnarok.webp"
+      "image": "https://t2.tudocdn.net/607245?w=1920"
     },
     {
       "title": "The Last of Us Part 1 recebe data de lançamento para PC",
       "description": "O remake do grande sucesso da Naughty Dog ficará disponível em breve para os PC gamers",
-      "image": "./assets/images/the-last-of-us.jpg"
+      "image": "https://viciados.net/wp-content/uploads/2022/06/The-Last-of-Us-Part-1.webp"
     }
   ]
 }

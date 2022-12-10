@@ -66,4 +66,21 @@ table {
 button {
   cursor: pointer;
 }
+
+body::-webkit-scrollbar {
+  width: 8px;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar-track {
+  background: ${props => props.theme.colors.backgroundBody};
+}
+
+
+body::-webkit-scrollbar-thumb {
+  background-color: ${props => props.theme.colors.background};
+  border-radius: 16px;
+}
 `;
+
+
