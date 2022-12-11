@@ -72,6 +72,7 @@ body::-webkit-scrollbar {
   scroll-behavior: smooth;
 }
 
+
 body::-webkit-scrollbar-track {
   background: ${props => props.theme.colors.backgroundBody};
 }

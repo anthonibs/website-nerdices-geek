@@ -8,14 +8,16 @@ export const dark = {
     background: "#F74C0C",
     text: {
       primary: "#F74C0C",
-      secondary: "#4C4C4C",
+      secondary: "#F2F2F2",
       third: "#C4C4C4",
       default: "#F2F2F2",
     },
     isHover: "#f75d24",
-    isActive: "#F74C0C",
+    isActive: "#e7450a",
+    link: "#F2F2F2"
   }
 };
+
 
 export const light = {
   title: "light",
@@ -30,6 +32,7 @@ export const light = {
       default: "#4C4C4C",
     },
     isHover: "#f75d24",
-    isActive: "#F74C0C",
+    isActive: "#e7450a",
+    link: "#F2F2F2"
   }
 };

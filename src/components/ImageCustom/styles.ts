@@ -10,6 +10,7 @@ export const Figure = styled.figure<IProps>`
   overflow: hidden;
   width: 100%;
   height: 100%;
+  border-radius: .125rem;
 
   a {
     position: absolute;
@@ -20,7 +21,8 @@ export const Figure = styled.figure<IProps>`
     top: .6rem;
     font-weight: 600;
     font-size: ${props => props.size};
-    color: ${props => props.theme.colors.text.default};
+    color: ${props => props.theme.colors.link};
+    z-index: 100;
   }
 
   img {
@@ -31,20 +33,31 @@ export const Figure = styled.figure<IProps>`
     object-fit: cover;
     transition: transform .3s ease-in;
     cursor: pointer;
+  }
 
+  &:hover > img {
     ${props => props.expandImage === true
-    ? "&:hover {transform: scale(1.1)}"
-    : "" };
+    ? "transform: scale(1.1);}"
+    : ""};
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(0deg, ${props => props.theme.colors.backgroundBody} 2%, ${props => props.theme.colors.backgroundBody}73 30%, rgba(255,255,255, 6%) 100%);
   }
 
   h3 {
     position: absolute;
     bottom: 10px;
     font-size: .9rem;
+    padding: 0 1rem;
     font-weight: 600;
-    left: 1rem;
     line-height: normal;
-    color: ${props => props.theme.colors.text.default};
-    pointer-events: none;
+    color: ${props => props.theme.colors.text.secondary};
+    z-index: 100;
   }
 `;

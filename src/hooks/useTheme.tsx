@@ -1,7 +1,7 @@
 import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useState } from "react";
 import { DefaultTheme } from "styled-components";
 
-import { dark } from "../styles/themes";
+import { dark, light } from "../styles/themes";
 
 
 interface IThemeContext {

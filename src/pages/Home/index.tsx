@@ -37,22 +37,15 @@ const Home = () => {
           </Link>
         </div>
 
-
-        <ImagemCustom
-          image={"https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/45cd3de6acf23f58481db5e2ec2269be.jpeg"}
-          link="/animes"
-          size="12px"
-          title={"Diretamente da TOHO animation 10th Anniversary Stage Event, tivemos a confirmação que a previsão de estreia da terceira temporada de Dr. Stone está marcada para a primavera norte-americana do próximo ano."}
-          expandImage
-        />
-
-        <ImagemCustom
-          image={"https://tm.ibxk.com.br/ms/images/highlights/000/047/448/44799.jpg?ims=1200x675"}
-          link="/animes"
-          size="12px"
-          title="O adolescente Jaime Reyes ganha superpoderes quando um misterioso escaravelho se prende à sua coluna e lhe fornece uma poderosa armadura alienígena azul."
-          expandImage
-        />
+        {database.bannerAside.map((item, index) => (
+          <ImagemCustom key={index}
+            image={item.image}
+            link="/animes"
+            size="12px"
+            title={item.description}
+            expandImage
+          />
+        ))}
       </BannerMain>
 
       <Container id="news">
@@ -75,14 +68,12 @@ const Home = () => {
           <ul>
             {database.games.map((game, index) => (
               <li key={index}>
-                <a href="#">
-                  <ImagemCustom key={index}
-                    title={game.title}
-                    size="12px"
-                    image={game.image}
-                    expandImage
-                  />
-                </a>
+                <ImagemCustom key={index}
+                  title={game.title}
+                  size="12px"
+                  image={game.image}
+                  expandImage
+                />
               </li>
             ))}
           </ul>

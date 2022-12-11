@@ -14,6 +14,7 @@ export const CardItem = styled.article`
     grid-template-rows: auto 1fr auto 30px;
 
     h3 {
+      color: ${props => props.theme.colors.text.secondary};
       font-size: 1rem;
       font-weight: normal;
       font-family: 'Lexend Deca', sans-serif;
@@ -21,24 +22,26 @@ export const CardItem = styled.article`
     }
 
     p {
+      color:  ${props => props.theme.colors.text.third};
       font-size: .8rem;
     }
 
     span {
-      margin: .6rem 0;
+      color:  ${props => props.theme.colors.text.third};
       font-size: .8rem;
+      margin: .6rem 0;
     }
 
     a {
-      display: block;
-      width: fit-content;
-      margin-top: .3rem;
-      background: #F74C0C;
-      font-weight: 600;
-      padding: 0.325rem 1rem;
+      color: ${props => props.theme.colors.link};
+      background:${props => props.theme.colors.background};
       border-radius: 0.2rem;
       font-size: 12px;
-      color: #F2F2F2;
+      font-weight: 600;
+      height: fit-content;
+      margin-top: .3rem;
+      padding: 0.325rem 1rem;
+      width: fit-content;
     }
   }
 `;

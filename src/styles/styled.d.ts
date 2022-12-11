@@ -15,6 +15,7 @@ declare module "styled-components" {
       },
       isHover: string,
       isActive: string,
+      link: string,
     }
   }
 }

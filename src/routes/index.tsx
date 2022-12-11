@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "../components/Layout";
-import Animes from "../pages/Animes";
+import Games from "../pages/Games";
 import Home from "../pages/Home";
 
 const AppRoutes = () => {
@@ -9,7 +9,7 @@ const AppRoutes = () => {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="animes" element={<Animes />} />
+          <Route path="games" element={<Games />} />
         </Routes>
       </Layout>
     </BrowserRouter>

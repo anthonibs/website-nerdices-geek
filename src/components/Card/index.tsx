@@ -2,7 +2,7 @@ import ImagemCustom from "../ImageCustom";
 import { CardItem } from "./styles";
 
 interface ICard {
-  image: any;
+  image: string;
   title: string;
   description: string;
   data?: string;
