@@ -115,7 +115,7 @@ const Header = () => {
         <button onClick={scrollToTop}
           id="arrow-up"
         >
-          <BiArrowToTop size={28} />
+          <BiArrowToTop size={24} />
         </button>
       )}
     </HeaderMain >

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 interface IProps {
-  size: string;
-  expandImage: any;
+  size?: string;
+  expandImage: boolean;
 }
 
 export const Figure = styled.figure<IProps>`
@@ -27,7 +27,8 @@ export const Figure = styled.figure<IProps>`
 
   img {
     max-width: 100%;
-    height: 100%;
+    width: 100%;
+    height: auto;
     display: block;
     object-position: center;
     object-fit: cover;

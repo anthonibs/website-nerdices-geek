@@ -2,9 +2,9 @@ import styled, { keyframes } from "styled-components";
 
 const animateScrollTop = keyframes`
   from {
+    display: block;
     opacity: 0;
     transform: scale(0);
-    display: block;
   }
 
   to {
@@ -39,10 +39,10 @@ export const HeaderMain = styled.header`
     border: none;
     background: ${props => props.theme.colors.background};
     color: ${props => props.theme.colors.text.secondary};
-    height: 50px;
+    height: 40px;
     position: fixed;
     right: 1rem;
-    width: 50px;
+    width: 40px;
   }
 `;
 
@@ -73,10 +73,10 @@ export const Navigating = styled.nav`
   }
 
   button {
-    color: ${props => props.theme.colors.text.default};
     border-radius: 3rem;
     background: transparent;
     border: 1px ${props => props.theme.colors.background} solid;
+    color: ${props => props.theme.colors.text.default};
     font-size: 1rem;
     padding: .3rem 1.6rem;
     transition: background .3s ease-in;
@@ -93,11 +93,11 @@ export const Navigating = styled.nav`
   }
 
   #btnTheme {
-    display: flex;
+    color: ${({ theme }) => theme.colors.text.primary};
     background-color: transparent;
     border: none;
+    display: flex;
     padding: .3rem;
-    color: ${({ theme }) => theme.colors.text.primary};
     transition: color .2s ease-in;
 
     &:hover {

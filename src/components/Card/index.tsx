@@ -1,3 +1,4 @@
+import { Link, useLocation } from "react-router-dom";
 import ImagemCustom from "../ImageCustom";
 import { CardItem } from "./styles";
 
@@ -10,7 +11,12 @@ interface ICard {
   expandImage: boolean;
 }
 
+
+
+
 const Card = ({ title, description, image, data, expandImage, link }: ICard) => {
+  const location = useLocation();
+ 
   return (
     <CardItem>
       <ImagemCustom
@@ -28,7 +34,9 @@ const Card = ({ title, description, image, data, expandImage, link }: ICard) => 
         </p>
         <span>{data}</span>
 
-        <a href="#">Ler notícia</a>
+        <Link to={`${location.pathname}/${link}`}>
+          Ler mais
+        </Link>
       </div>
     </CardItem>
   );

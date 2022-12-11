@@ -40,7 +40,7 @@ const Home = () => {
         {database.bannerAside.map((item, index) => (
           <ImagemCustom key={index}
             image={item.image}
-            link="/animes"
+            link={item.title}
             size="12px"
             title={item.description}
             expandImage
@@ -73,6 +73,7 @@ const Home = () => {
                   size="12px"
                   image={game.image}
                   expandImage
+                  link={`${game.title}`}
                 />
               </li>
             ))}
