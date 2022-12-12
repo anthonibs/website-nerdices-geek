@@ -11,6 +11,7 @@ O website simula um blog de notícias e novidades sobre o universo neeerd! possi
 
 
 **Projeto original:** [https://github.com/rhuanbello/naped](https://github.com/rhuanbello/naped)
+<br/>
 **Website modelo:** [https://naped-rhuanbello.vercel.app/#](https://naped-rhuanbello.vercel.app/#)
 
 
@@ -40,8 +41,20 @@ Você pode acessar o código fonte do projeto [inicial](https://website-anthonib
 
 ## 🖥️ Para dispositivos Móveis, Tablets e Desktops.
 
+## Desktop
+[ScreenRecorderProject8.webm](https://user-images.githubusercontent.com/77931577/207084568-4ee9b607-6d4e-4b7d-a7ce-72eb494b782a.webm)
 
+-----
 
+## Tablet
+[ScreenRecorderProject9.webm](https://user-images.githubusercontent.com/77931577/207084702-1cd9fa97-7ca0-41c1-a5c7-1247b7ff21ee.webm)
+
+-----
+
+## Mobile
+[ScreenRecorderProject11.webm](https://user-images.githubusercontent.com/77931577/207084749-2c4d2780-28e6-4a84-ada4-1d60fa5d5a9c.webm)
+
+-----
 
 
 ## ☕ Seja um dos contribuidores
@@ -56,5 +69,5 @@ Esse projeto está sob licença. Veja o arquivo [MIT](https://github.com/anthoni
 
 ## ✏️  Autores
 
- | | [<img src="https://avatars.githubusercontent.com/u/77931577?v=4" width=115><br><sub>Anthoni Broering dos Santos</sub>](https://github.com/anthonibs) | |
-|:---:|:---: |:---: |
+ |  [<img src="https://avatars.githubusercontent.com/u/77931577?v=4" width=115><br><sub>Anthoni Broering dos Santos</sub>](https://github.com/anthonibs) | 
+|:---:|
