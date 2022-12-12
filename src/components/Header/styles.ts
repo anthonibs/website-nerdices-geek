@@ -1,5 +1,9 @@
 import styled, { keyframes } from "styled-components";
 
+interface IPropsMenu {
+  isMenu: boolean;
+}
+
 const animateScrollTop = keyframes`
   from {
     display: block;
@@ -46,63 +50,122 @@ export const HeaderMain = styled.header`
   }
 `;
 
-export const Navigating = styled.nav`
-  display: flex;
-  font-size: 1rem;
-  gap: 1rem;
+export const MenuHamburger = styled.button`
+  @media(min-width: 375px) {
+    display: block;
+    background: transparent;
+    height: 40px;
+    width: fit-content;
+    color: ${props => props.theme.colors.text.primary};
+    border: none;
+    padding: .625rem;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    z-index: 1200;
+  }
 
-  ul {
-    align-items: center;
+  @media(min-width: 1000px) {
+    display: none;
+  }
+`;
+
+export const Navigating = styled.nav<IPropsMenu>`
+  @media(min-width: 375px) {
     display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    margin-right: 3rem;
+    font-size: 1rem;
+    gap: 1rem;
 
-    a {
-      color: ${props => props.theme.colors.text.default};
-      transition: color .3s ease-in;
+    ul {
+      position: fixed;
+      height: 100%;
+      right: 0;
+      display: ${props => props.isMenu === true ? "none" : "flex"};
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 1rem;
+      top:0;
+      width: 300px;
+      padding: 6rem 3rem;
+      background: ${props => props.theme.colors.backgroundBody};
+
+      a {
+        color: ${props => props.theme.colors.text.default};
+
+        &:hover {
+          color: ${props => props.theme.colors.isHover};
+        }
+      }
+
+      .active-page {
+        color: ${props => props.theme.colors.isActive};
+      }
+
+      div {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        button {
+          border-radius: 3rem;
+          background: transparent;
+          border: 1px ${props => props.theme.colors.background} solid;
+          color: ${props => props.theme.colors.text.default};
+          font-size: .8rem;
+          padding: .3rem 1rem;
+          transition: background .3s ease-in;
+          white-space: nowrap;
+          width: fit-content;
 
       &:hover {
-        color: ${props => props.theme.colors.isHover};
+        color: ${props => props.theme.colors.link};
+        background: ${props => props.theme.colors.background};
+      }
+
+      &:active {
+        background: ${props => props.theme.colors.isActive}
       }
     }
 
-    .active-page {
-      color: ${props => props.theme.colors.isActive};
+    #btnTheme {
+      color: ${({ theme }) => theme.colors.text.primary};
+      background-color: transparent;
+      border: none;
+      display: flex;
+      padding: .3rem;
+      transition: color .2s ease-in;
+
+        &:hover {
+          color: ${({ theme }) => theme.colors.isHover};
+        }
+      }
+      }
     }
   }
 
-  button {
-    border-radius: 3rem;
-    background: transparent;
-    border: 1px ${props => props.theme.colors.background} solid;
-    color: ${props => props.theme.colors.text.default};
-    font-size: 1rem;
-    padding: .3rem 1.6rem;
-    transition: background .3s ease-in;
-    white-space: nowrap;
+  @media(min-width: 1000px) {
+    ul {
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      display: ${props => props.isMenu === true ? "flex" : "flex"};
+      flex-direction: row;
+      gap: 2rem;
+      width: 100%;
+      padding: 0;
+      background: transparent;
 
-    &:hover {
-      color: ${props => props.theme.colors.link};
-      background: ${props => props.theme.colors.background};
-    }
+      div {
+        margin-bottom: 0;
+        align-items: center;
+        order: 2;
 
-    &:active {
-      background: ${props => props.theme.colors.isActive}
-    }
-  }
-
-  #btnTheme {
-    color: ${({ theme }) => theme.colors.text.primary};
-    background-color: transparent;
-    border: none;
-    display: flex;
-    padding: .3rem;
-    transition: color .2s ease-in;
-
-    &:hover {
-      color: ${({ theme }) => theme.colors.isHover};
+        button {
+          font-size: 1rem;
+          padding: .3rem 1.8rem;
+        }
+      }
     }
   }
-
 `;

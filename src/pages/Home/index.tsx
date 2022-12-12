@@ -14,6 +14,7 @@ import {
 } from "./styles";
 
 const Home = () => {
+
   return (
     <>
       <TitleHero>
@@ -28,7 +29,7 @@ const Home = () => {
         </p>
       </TitleHero>
 
-      <BannerMain id="banner-main">
+      <BannerMain>
         <div className="banner-main">
           <Link to="#">
             <span>Ver mais</span>
@@ -41,7 +42,6 @@ const Home = () => {
           <ImagemCustom key={index}
             image={item.image}
             link={item.title}
-            size="12px"
             title={item.description}
             expandImage
           />
@@ -70,10 +70,9 @@ const Home = () => {
               <li key={index}>
                 <ImagemCustom key={index}
                   title={game.title}
-                  size="12px"
                   image={game.image}
                   expandImage
-                  link={`${game.title}`}
+                  link={`games/${game.title}`}
                 />
               </li>
             ))}
@@ -90,7 +89,6 @@ const Home = () => {
               <ImagemCustom
                 expandImage
                 image={newItem.image}
-                size="14px"
                 link="#"
                 title={newItem.description}
               />

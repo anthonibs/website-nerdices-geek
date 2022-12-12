@@ -1,4 +1,4 @@
-import { HeaderMain, Navigating } from "./styles";
+import { HeaderMain, MenuHamburger, Navigating } from "./styles";
 
 import logo from "../../assets/svg/logo-nerdices-geek.svg";
 import { NavLink } from "react-router-dom";
@@ -6,7 +6,7 @@ import { useTheme } from "../../hooks/useTheme";
 import { dark, light } from "../../styles/themes";
 
 import { IoIosSunny, IoIosPartlySunny } from "react-icons/io";
-import { BiArrowToTop } from "react-icons/bi";
+import { BiArrowToTop, BiMenu } from "react-icons/bi";
 
 import { useEffect, useRef, useState } from "react";
 
@@ -14,6 +14,7 @@ const Header = () => {
 
   const { theme, setTheme } = useTheme();
   const [visible, setVisible] = useState(false);
+  const [isMenu, setIsMenu] = useState(true);
 
   const cbRef = useRef(toggleVisible);
 
@@ -52,12 +53,35 @@ const Header = () => {
     });
   }
 
+  function handleToggleMenu() {
+    console.log("Abrir menu!");
+    setIsMenu(!isMenu);
+  }
 
+  console.log(isMenu);
   return (
     <HeaderMain>
       <img src={logo} alt="Logo Nerdices Geek" />
-      <Navigating>
+
+      <MenuHamburger onClick={handleToggleMenu}>
+        <BiMenu size={28} />
+      </MenuHamburger>
+
+      <Navigating isMenu={isMenu}>
         <ul>
+          <div>
+            <button
+              id="btnTheme"
+              onClick={handleToggleTheme}
+            >
+              {theme.title === "dark" ? <IoIosSunny size={24} /> : <IoIosPartlySunny size={24} />}
+            </button>
+
+            <button>
+              Minha Conta
+            </button>
+          </div>
+
           <li>
             <NavLink
               to={"/"}
@@ -99,16 +123,6 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-        <button
-          id="btnTheme"
-          onClick={handleToggleTheme}
-        >
-          {theme.title === "dark" ? <IoIosSunny size={24} /> : <IoIosPartlySunny size={24} />}
-        </button>
-
-        <button>
-          Minha Conta
-        </button>
       </Navigating>
 
       {visible && (

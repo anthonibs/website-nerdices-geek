@@ -16,13 +16,12 @@ interface ICard {
 
 const Card = ({ title, description, image, data, expandImage, link }: ICard) => {
   const location = useLocation();
- 
+
   return (
     <CardItem>
       <ImagemCustom
         image={image}
         link={link}
-        size="10px"
         expandImage={expandImage}
       />
       <div>
