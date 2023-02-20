@@ -3,7 +3,6 @@ import { HeaderMain, MenuHamburger, Navigating } from "./styles";
 import logo from "../../assets/svg/logo-nerdices-geek.svg";
 import { NavLink } from "react-router-dom";
 import { useTheme } from "../../hooks/useTheme";
-import { dark, light } from "../../styles/themes";
 
 import { IoIosSunny, IoIosPartlySunny } from "react-icons/io";
 import { BiArrowToTop, BiMenu } from "react-icons/bi";
@@ -12,9 +11,9 @@ import { useEffect, useRef, useState } from "react";
 
 const Header = () => {
 
-  const { theme, setTheme } = useTheme();
-  const [visible, setVisible] = useState(false);
-  const [isMenu, setIsMenu] = useState(true);
+  const { theme, handleToggleTheme } = useTheme();
+  const [visible, setVisible] = useState<boolean>(false);
+  const [isMenu, setIsMenu] = useState<boolean>(true);
 
   const cbRef = useRef(toggleVisible);
 
@@ -31,10 +30,6 @@ const Header = () => {
     };
   }, []);
 
-
-  function handleToggleTheme() {
-    setTheme(theme.title === "dark" ? light : dark);
-  }
 
   function toggleVisible() {
     const scrolled = document.documentElement.scrollTop;
@@ -54,11 +49,10 @@ const Header = () => {
   }
 
   function handleToggleMenu() {
-    console.log("Abrir menu!");
-    setIsMenu(!isMenu);
+    setIsMenu(prevState => !prevState);
   }
 
-  console.log(isMenu);
+
   return (
     <HeaderMain>
       <img src={logo} alt="Logo Nerdices Geek" />
